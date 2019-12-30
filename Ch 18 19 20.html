@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH 18 19 20</title>
+        <script>
+            var course = [];
+            var course1 = [];
+
+            for (var i=0; i<=4; i++){
+                course1[i]=prompt("Enter cousre " +(i+1) +" : ");
+                course.push(course1[i]);
+            }
+        
+            alert(course);
+
+            for (var i=0; i<=4; i++){
+                course1[i]=prompt("Course "+(i+1)+" is:",(course[i]));
+                if (course[i] != course1[i]){
+                    course.splice(i,1, course1[i]);
+                }
+            }
+
+            alert(course);
+
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

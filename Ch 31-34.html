@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH 31 to 34</title>
+        <script>
+            var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+            var nDate = new Date();
+            var yDOB = prompt("Enter Your Year of Birth");
+            var mDOB = prompt("Enter your month of Birth");
+            var dDOB = prompt("Enter you Date of Birth");
+            var hDOB = prompt("Enter your hour of birth");
+            var miDOB = prompt("Enter your minutes of birth");
+            var sDOB = prompt("Enter your seconds of birth");
+            var nMonth;
+            console.log("Your date of birth is: ", dDOB , " - " , mDOB , " - " , yDOB);
+            
+            //alert("Your date of birth is: "+dDOB+" - " + mDOB+" - " + yDOB);
+            
+            var diffYear = nDate.getFullYear() - yDOB;
+            var diffMonth = nDate.getMonth() - mDOB;
+            var diffday = nDate.getDate() - dDOB;
+            var difHours = nDate.getHours() - hDOB;
+            var difMinutes = nDate.getMinutes() - miDOB;
+            var difSeconds = nDate.getSeconds() - sDOB;
+
+            console.log("you are ", diffYear ," Years ", diffMonth ," Months ", diffday ," Days ", difHours ," Hours ", difMinutes ," Minutes ", difSeconds ," Seconds old.");
+            // alert("you are "+ diffYear +" Years "+ diffMonth +" Months "+ diffday +" Days "+ difHours +" Hours "+ difMinutes +" Minutes "+ difSeconds +" Seconds old.");
+
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH 15 16 17</title>
+        <script>
+            var course = [];
+            var course1 = [];
+
+            course1[0]=prompt("Enter 1st cousre");
+            course.push(course1[0]);
+            course1[1]=prompt("Enter 2nd cousre");
+            course.push(course1[1]);
+            course1[2]=prompt("Enter 3rd cousre");
+            course.push(course1[2]);
+            course1[3]=prompt("Enter 4th cousre");
+            course.push(course1[3]);
+            course1[4]=prompt("Enter 5th cousre");
+            course.push(course1[4]);
+
+            alert(course);
+
+            course1[0]=prompt("1st course is:",(course[0]));
+            if (course[0] != course1[0]){
+                course.splice(0,1, course1[0]);
+            }
+            course1[1]=prompt("2nd course is:",(course[1]));
+            if (course[1] != course1[1]){
+                course.splice(1,1, course1[1]);
+            }
+            course1[2]=prompt("3rd course is:",(course[2]));
+            if (course[2] != course1[2]){
+                course.splice(2,1, course1[2]);
+            }
+            course1[3]=prompt("4th course is:",(course[3]));
+            if (course[3] != course1[3]){
+                course.splice(3,1, course1[3]);
+            }
+            course1[4]=prompt("5th course is:",(course[4]));
+            if (course[4] != course1[4]){
+                course.splice(4,1, course1[4]);
+            }
+
+            alert(course);
+
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>
